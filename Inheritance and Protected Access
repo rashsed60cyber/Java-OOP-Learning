@@ -1,0 +1,16 @@
+class Vehicle {
+    protected String fuelType = "Petrol";
+}
+
+class Bike extends Vehicle {
+    void show() {
+        System.out.println("This bike runs on: " + fuelType);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Bike myBike = new Bike();
+        myBike.show();
+    }
+}
