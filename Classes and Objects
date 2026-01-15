@@ -1,0 +1,17 @@
+class Smartphone {
+    String brand;
+    String model;
+
+    void displayInfo() {
+        System.out.println("Brand: " + brand + ", Model: " + model);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Smartphone phone = new Smartphone();
+        phone.brand = "Samsung";
+        phone.model = "S23 Ultra";
+        phone.displayInfo();
+    }
+}
