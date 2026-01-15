@@ -1,0 +1,20 @@
+interface Clock {
+    void showTime();
+}
+
+interface Tracker {
+    void trackSteps();
+}
+
+class SmartWatch implements Clock, Tracker {
+    public void showTime() { System.out.println("Time: 10:30 PM"); }
+    public void trackSteps() { System.out.println("Steps: 5000"); }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        SmartWatch sw = new SmartWatch();
+        sw.showTime();
+        sw.trackSteps();
+    }
+}
