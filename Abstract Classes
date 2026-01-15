@@ -1,0 +1,21 @@
+abstract class Payment {
+    abstract void processPayment();
+    
+    void receipt() {
+        System.out.println("Generating receipt...");
+    }
+}
+
+class BkashPayment extends Payment {
+    void processPayment() {
+        System.out.println("Payment processed via Bkash.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        BkashPayment pay = new BkashPayment();
+        pay.processPayment();
+        pay.receipt();
+    }
+}
