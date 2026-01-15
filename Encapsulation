@@ -1,0 +1,21 @@
+class Student {
+    private int roll;
+    private String name;
+
+    public void setDetails(int r, String n) {
+        this.roll = r;
+        this.name = n;
+    }
+
+    public void getDetails() {
+        System.out.println("Roll: " + roll + ", Name: " + name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.setDetails(101, "Rahim");
+        s.getDetails();
+    }
+}
