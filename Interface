@@ -1,0 +1,16 @@
+interface Device {
+    void turnOn();
+}
+
+class Fan implements Device {
+    public void turnOn() {
+        System.out.println("Fan is spinning...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Fan myFan = new Fan();
+        myFan.turnOn();
+    }
+}
